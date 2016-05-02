@@ -2,14 +2,13 @@
 
 int main(){
 	
-	printf("Please input your extension.(m)\n");
-	double exten,weight,exten2,bmi;
-	scanf ("%lf",&exten);
+	printf("Please input your height.(m)\n");
+	float height,weight,bmi;
+	scanf ("%f",&height);
 	printf("Please input your body weight.(kg)\n");
-	scanf ("%lf",&weight);
-	exten2 = exten * exten;
-	bmi = weight / exten2;
-	//printf("%lfm,%lfkg,%lf\n",exten,weight,exten2);
-	printf("Your BMI is %lf\n",bmi);
+	scanf ("%f",&weight);
+	bmi = weight / (height * height);
+	//printf("%fm,%fkg,%f\n",height,weight);
+	printf("Your BMI is %f\n",bmi);
 	
 }
